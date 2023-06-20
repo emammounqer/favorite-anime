@@ -1,0 +1,12 @@
+{% extends '_base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}Add Anime{% endblock %}
+{% block content %}
+<h2>Add Anime</h2>
+<form method="post" class="uniForm">
+  {% csrf_token %}
+  {{ form|crispy }}
+  <input type="submit" value="SAVE">
+</form>
+{% endblock content %}

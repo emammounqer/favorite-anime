@@ -32,6 +32,7 @@
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
           <li><a href="{% url 'home' %}" class="nav-link px-2 link-secondary">Home</a></li>
+          <li><a href="{% url 'anime_list' %}" class="nav-link px-2 link-dark">Animes</a></li>
           <li><a href="{% url 'about' %}" class="nav-link px-2 link-dark">About</a></li>
         </ul>
 
@@ -65,11 +66,6 @@
     {% endblock content %}
   </div>
 
-  <footer class="footer">
-    <div class="container">
-      <span class="text-muted">Footer...</span>
-    </div>
-  </footer>
 
   {% block javascript %}
   <!-- Bootstrap JavaScript -->
